@@ -15,8 +15,8 @@ Artisan::command('inspire', function () {
 // Define scheduled tasks
 $schedule = app(Schedule::class);
 
-// Schedule the job to aggregate product accesses hourly
-$schedule->job(new AggregateProductAccesses)->hourly();
+// // Schedule the job to aggregate product accesses hourly
+// $schedule->job(new AggregateProductAccesses)->hourly();
 
-// Schedule the command to preload the cache daily at midnight
-$schedule->command(PreloadTopProductsCache::class)->dailyAt('00:00');
+// // Schedule the command to preload the cache daily at midnight
+// $schedule->command(PreloadTopProductsCache::class)->dailyAt('00:00');
